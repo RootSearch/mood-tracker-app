@@ -5,9 +5,13 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "debug": "react-devtools",
+    "pod": "npx pod-install ios",
+    "clear:adb": "adb kill-server && adb start-server",
+    "clear:watchman": "watchman watch-del '/Users/Vincent/Workspace/daizy'; watchman watch-project '/Users/Vincent/Workspace/daizy'",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "react": "18.2.0",

@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "debug": "react-devtools",
+    "debug": "npx react-devtools",
     "pod": "npx pod-install ios",
     "clear:adb": "adb kill-server && adb start-server",
     "clear:watchman": "watchman watch-del '/Users/Vincent/Workspace/daizy'; watchman watch-project '/Users/Vincent/Workspace/daizy'",

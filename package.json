@@ -9,7 +9,7 @@
     "debug": "npx react-devtools",
     "pod": "npx pod-install ios",
     "clear:adb": "adb kill-server && adb start-server",
-    "clear:watchman": "watchman watch-del '/Users/Vincent/Workspace/daizy'; watchman watch-project '/Users/Vincent/Workspace/daizy'",
+    "clear:watchman": "pwd | watchman watch-del $(cat) ; pwd | watchman watch-project $(cat)",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },

@@ -1,8 +1,9 @@
-import React from 'react';
-import {View, StyleSheet} from 'react-native';
 import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
-import {navigationRef} from '~/infra/navigation';
-import {RootNavigator} from '~/navigations/RootNavigator';
+import {StyleSheet, View} from 'react-native';
+
+import React from 'react';
+import {RootNavigator} from '~/navigators/RootNavigator';
+import {navigationRef} from '~/services/navigation';
 
 export const RootFrame = () => {
   return (

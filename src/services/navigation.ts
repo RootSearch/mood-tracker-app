@@ -1,17 +1,24 @@
-import {createNavigationContainerRef} from '@react-navigation/native';
+import {Route, createNavigationContainerRef} from '@react-navigation/native';
 
-import {screens} from '~/screens';
 import type {Screens} from '~/screens';
 import {error} from '~/utils/commons';
+import {screens} from '~/screens';
 
 export const navigationRef = createNavigationContainerRef<any>();
+
+export interface navigation {
+  current(): Route<string, object | undefined> | undefined;
+  navigate(name: Screens, params?: StringMap): void;
+  setRoot(name: Screens, params?: StringMap): void;
+  goBack(): void;
+}
 
 export const navigation = {
   current() {
     if (!navigationRef.isReady()) return;
     return navigationRef.getCurrentRoute();
   },
-  navigate(name: Screens, params?: object) {
+  navigate(name: Screens, params?: StringMap) {
     if (!navigationRef.isReady()) return;
     try {
       if (!screens.has(name)) return;
@@ -20,7 +27,7 @@ export const navigation = {
       error(e);
     }
   },
-  setRoot(name: Screens, params?: object) {
+  setRoot(name: Screens, params?: StringMap) {
     if (!navigationRef.isReady()) return;
     try {
       if (!screens.has(name)) return;

@@ -1,15 +1,16 @@
-import React from 'react';
-import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
+import {TransitionPresets, createStackNavigator} from '@react-navigation/stack';
 import {
   authScreens,
-  tabScreens,
-  navigatedScreens,
   initScreenKey,
+  navigatedScreens,
+  tabScreens,
   utilityScreens,
 } from '~/screens';
-import {useAtom} from 'jotai';
-import {authTokenAtom} from '~/stores/auth';
+
 import type {NavigatedScreenProps} from '~/screens/types';
+import React from 'react';
+import {authTokenAtom} from '~/stores/auth';
+import {useAtom} from 'jotai';
 
 const History = createStackNavigator<NavigatedScreenProps>();
 

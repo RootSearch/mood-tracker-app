@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
-
 import {StyleSheet, View} from 'react-native';
-import {switchToTestScreen1} from '~/utils/navigation';
 
-import type {StackScreenProps} from '@react-navigation/stack';
 import type {NavigatedScreenProps} from './types';
+import type {StackScreenProps} from '@react-navigation/stack';
 import {TestScreen} from '~/components/organisms';
+import {switchToTestScreen1} from '~/adaptors/navigation';
 
 type Props = StackScreenProps<NavigatedScreenProps, 'Loading'>;
 

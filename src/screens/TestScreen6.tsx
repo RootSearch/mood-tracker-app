@@ -1,8 +1,8 @@
-import React from 'react';
-
 import {StyleSheet, View} from 'react-native';
+
+import React from 'react';
 import {TestScreen} from '~/components/organisms';
-import {navigation} from '~/infra/navigation';
+import {navigation} from '~/services/navigation';
 
 export const TestScreen6 = () => {
   return (

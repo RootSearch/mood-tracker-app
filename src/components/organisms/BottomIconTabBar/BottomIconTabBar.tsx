@@ -1,7 +1,3 @@
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import {IconListGroup} from '~/components/molecules';
-
 import {
   ContentsChecked,
   ContentsDefault,
@@ -14,15 +10,19 @@ import {
   MenuChecked,
   MenuDefault,
 } from '~/assets/images/icons';
-import {Screens} from '~/screens';
+import {StyleSheet, View} from 'react-native';
 import {
   switchToTestScreen1,
   switchToTestScreen2,
   switchToTestScreen3,
   switchToTestScreen4,
   switchToTestScreen5,
-} from '~/utils/navigation';
-import {isIOS} from '~/infra/device';
+} from '~/adaptors/navigation';
+
+import {IconListGroup} from '~/components/molecules';
+import React from 'react';
+import {Screens} from '~/screens';
+import {isIOS} from '~/app/device';
 
 const tabs: Parameters<typeof IconListGroup>[0]['tabs'] = [
   {

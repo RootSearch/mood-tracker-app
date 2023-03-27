@@ -1,10 +1,10 @@
-import {useAtom} from 'jotai';
-import React from 'react';
-
 import {StyleSheet, View} from 'react-native';
+
+import React from 'react';
 import {TestScreen} from '~/components/organisms';
 import {authTokenAtom} from '~/stores/auth';
-import {moveToLoading} from '~/utils/navigation';
+import {moveToLoading} from '~/adaptors/navigation';
+import {useAtom} from 'jotai';
 
 export const SignIn = () => {
   const [, setAuthToken] = useAtom(authTokenAtom);

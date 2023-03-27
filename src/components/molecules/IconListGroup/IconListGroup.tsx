@@ -1,13 +1,14 @@
-import React, {useMemo} from 'react';
 import {
   GestureResponderEvent,
   ImageSourcePropType,
   StyleSheet,
   View,
 } from 'react-native';
+import React, {useMemo} from 'react';
+
 import {IconButton} from '~/components/atoms';
-import {VIEWPORT_WIDTH} from '~/infra/device';
 import {Screens} from '~/screens';
+import {VIEWPORT_WIDTH} from '~/app/device';
 
 interface IIconListGroup {
   tabs: {

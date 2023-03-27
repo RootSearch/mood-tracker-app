@@ -1,10 +1,10 @@
-import {navigation} from '~/infra/navigation';
+import {navigation} from '~/services/navigation';
 
 export function moveToSignIn() {
   navigation.setRoot('SignIn');
 }
 
-export function moveToLoading(params: object) {
+export function moveToLoading(params: StringMap) {
   navigation.setRoot('Loading', params);
 }
 

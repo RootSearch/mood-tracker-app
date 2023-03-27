@@ -23,33 +23,34 @@ export const RootNavigator = () => {
         ...TransitionPresets.ScaleFromCenterAndroid,
         headerShown: false,
       })}>
-      {Object.entries(utilityScreens).map(([key, screen]: any) => (
-        <History.Screen key={key} name={key} component={screen} />
-      ))}
-      {!authToken &&
-        Object.entries(authScreens).map(([key, screen]: any) => (
-          <History.Screen
-            key={key}
-            name={key}
-            component={screen}
-            options={{
-              animationTypeForReplace: 'pop',
-            }}
-          />
+      <History.Group>
+        {Object.entries(utilityScreens).map(([key, screen]: any) => (
+          <History.Screen key={key} name={key} component={screen} />
         ))}
-      {Object.entries(tabScreens).map(([key, screen]: any) => (
-        <History.Screen
-          key={key}
-          name={key}
-          component={screen}
-          options={{
-            animationEnabled: false,
-          }}
-        />
-      ))}
-      {Object.entries(navigatedScreens).map(([key, screen]: any) => (
-        <History.Screen key={key} name={key} component={screen} />
-      ))}
+      </History.Group>
+      {!authToken && (
+        <History.Group
+          screenOptions={{
+            animationTypeForReplace: 'pop',
+          }}>
+          {Object.entries(authScreens).map(([key, screen]: any) => (
+            <History.Screen key={key} name={key} component={screen} />
+          ))}
+        </History.Group>
+      )}
+      <History.Group
+        screenOptions={{
+          animationEnabled: false,
+        }}>
+        {Object.entries(tabScreens).map(([key, screen]: any) => (
+          <History.Screen key={key} name={key} component={screen} />
+        ))}
+      </History.Group>
+      <History.Group>
+        {Object.entries(navigatedScreens).map(([key, screen]: any) => (
+          <History.Screen key={key} name={key} component={screen} />
+        ))}
+      </History.Group>
     </History.Navigator>
   );
 };

@@ -1,6 +1,7 @@
-import React from 'react';
 import {Animated, Easing, StyleSheet} from 'react-native';
-import CONSTANTS from '~/infra/constants.json';
+
+import CONSTANTS from '~/app/constants.json';
+import React from 'react';
 import {Text} from '~/components/atoms';
 
 export class Toast extends React.Component<any, any> {

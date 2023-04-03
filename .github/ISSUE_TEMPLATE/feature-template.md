@@ -7,10 +7,8 @@ labels: feature
 
 ## Overview
 
----
 
 ## Detail
 
----
 
 ## Note

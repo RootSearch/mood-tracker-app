@@ -7,4 +7,3 @@ labels: document
 
 ## What is?
 
----

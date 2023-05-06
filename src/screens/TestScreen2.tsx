@@ -1,9 +1,9 @@
-import React from 'react';
+import {BottomIconTabBar, TestScreen} from '~/components/organism';
 import {StyleSheet, View} from 'react-native';
-import {BottomIconTabBar, TestScreen} from '~/components/organisms';
 
+import type {NavigatedScreenProps} from './type';
+import React from 'react';
 import type {StackScreenProps} from '@react-navigation/stack';
-import type {NavigatedScreenProps} from './types';
 
 type Props = StackScreenProps<NavigatedScreenProps, 'TestScreen1'>;
 

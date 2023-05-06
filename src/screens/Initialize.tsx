@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import {TestScreen} from '~/components/organisms';
-import {moveToSignIn} from '~/adaptors/navigation';
-import {toast} from '~/utils/commons';
+import {TestScreen} from '~/components/organism';
+import {moveToSignIn} from '~/modules/navigator/navigate';
+import {toast} from '~/utils/toast';
 
 export const Initialize = () => {
   // Note: 이하는 시연용 임시 코드

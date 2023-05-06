@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   GestureResponderEvent,
   Image,
@@ -7,7 +6,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {Text} from '~/components/atoms';
+
+import React from 'react';
+import {Text} from '~/components/atom';
 
 interface ITestScreen {
   title: string;

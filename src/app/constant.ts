@@ -1,0 +1,9 @@
+export const SECOND = 1000;
+export const MINUTE = SECOND * 60;
+export const HOUR = MINUTE * 60;
+export const DAY = HOUR * 24;
+export const DEBOUNCE_DELAY = 500;
+export const TOAST_ANIMATION_DURATION = 150;
+export const TOAST_SHOW_DURATION = 2000;
+export const BACK_PRESS_DURATION = 2500;
+export const BACK_BUTTON_EXIT_RESET_TIME = 1000;

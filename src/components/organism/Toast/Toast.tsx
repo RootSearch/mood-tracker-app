@@ -1,8 +1,8 @@
 import {Animated, Easing, StyleSheet} from 'react-native';
+import {TOAST_ANIMATION_DURATION, TOAST_SHOW_DURATION} from '~/app/constant';
 
-import CONSTANTS from '~/app/constants.json';
 import React from 'react';
-import {Text} from '~/components/atoms';
+import {Text} from '~/components/atom';
 
 export class Toast extends React.Component<any, any> {
   static instance: Toast;
@@ -23,10 +23,7 @@ export class Toast extends React.Component<any, any> {
     this.fadeIn && clearTimeout(this.fadeIn);
   }
 
-  static show(
-    content: string,
-    duration: number = CONSTANTS.TOAST_SHOW_DURATION,
-  ) {
+  static show(content: string, duration: number = TOAST_SHOW_DURATION) {
     Toast.instance._show(content, duration);
   }
 
@@ -35,14 +32,14 @@ export class Toast extends React.Component<any, any> {
     this.setState({visible: true, text});
     Animated.timing(this.opacity, {
       toValue: 1,
-      duration: CONSTANTS.TOAST_ANIMATION_DURATION,
+      duration: TOAST_ANIMATION_DURATION,
       easing: Easing.out(Easing.linear),
       useNativeDriver: true,
     }).start();
     this.fadeIn = setTimeout(() => {
       Animated.timing(this.opacity, {
         toValue: 0,
-        duration: CONSTANTS.TOAST_ANIMATION_DURATION,
+        duration: TOAST_ANIMATION_DURATION,
         easing: Easing.out(Easing.linear),
         useNativeDriver: true,
       }).start();
@@ -50,7 +47,7 @@ export class Toast extends React.Component<any, any> {
         this.setState({visible: false, text: ''});
         this.fadeOut = null;
         this.fadeIn = null;
-      }, CONSTANTS.TOAST_ANIMATION_DURATION);
+      }, TOAST_ANIMATION_DURATION);
     }, duration);
   }
 

@@ -1,8 +1,8 @@
 import {StyleSheet, View} from 'react-native';
 
 import React from 'react';
-import {TestScreen} from '~/components/organisms';
-import {navigation} from '~/services/navigation';
+import {TestScreen} from '~/components/organism';
+import {navigation} from '~/modules/navigator/base';
 
 export const TestScreen6 = () => {
   return (

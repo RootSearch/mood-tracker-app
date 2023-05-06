@@ -11,7 +11,7 @@ import {
 import type {NavigatedScreenProps} from '~/screens/type';
 import React from 'react';
 import {authTokenAtom} from '~/stores/auth';
-import {navigationRef} from '~/modules/navigator/base';
+import {navigationRef} from '~/modules/navigator';
 import {useAtom} from 'jotai';
 
 const History = createStackNavigator<NavigatedScreenProps>();

@@ -17,7 +17,7 @@ import {
   switchToTestScreen3,
   switchToTestScreen4,
   switchToTestScreen5,
-} from '~/modules/navigator/navigate';
+} from '~/modules/navigator';
 
 import {IconListGroup} from '~/components/molecule';
 import React from 'react';

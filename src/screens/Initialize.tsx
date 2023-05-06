@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {StyleSheet, View} from 'react-native';
 
 import {TestScreen} from '~/components/organism';
-import {moveToSignIn} from '~/modules/navigator/navigate';
+import {moveToSignIn} from '~/modules/navigator';
 import {toast} from '~/utils/toast';
 
 export const Initialize = () => {

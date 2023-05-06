@@ -4,7 +4,7 @@ import {StyleSheet, View} from 'react-native';
 import type {NavigatedScreenProps} from './type';
 import type {StackScreenProps} from '@react-navigation/stack';
 import {TestScreen} from '~/components/organism';
-import {switchToTestScreen1} from '~/modules/navigator/navigate';
+import {switchToTestScreen1} from '~/modules/navigator';
 
 type Props = StackScreenProps<NavigatedScreenProps, 'Loading'>;
 

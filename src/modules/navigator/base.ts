@@ -1,7 +1,7 @@
 import {Route, createNavigationContainerRef} from '@react-navigation/native';
 
 import type {Screens} from '~/screens';
-import {error} from '~/utils/commons';
+import {error} from '~/utils/console';
 import {screens} from '~/screens';
 
 export const navigationRef = createNavigationContainerRef<any>();

@@ -1,13 +1,13 @@
 import {StyleSheet, View} from 'react-native';
 
-import {NavigatorContext} from './NavigatorContext';
+import {NavigationContext} from './NavigatorContext';
 import React from 'react';
 
 export const RootContext = () => {
   return (
     <View style={style.root}>
       {/* <VideoBackground /> */}
-      <NavigatorContext />
+      <NavigationContext />
     </View>
   );
 };

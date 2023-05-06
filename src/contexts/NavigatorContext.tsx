@@ -16,7 +16,7 @@ import {useAtom} from 'jotai';
 
 const History = createStackNavigator<NavigatedScreenProps>();
 
-export const NavigatorContext = () => {
+export const NavigationContext = () => {
   const [authToken] = useAtom(authTokenAtom);
   return (
     <NavigationContainer ref={navigationRef} theme={navTheme}>

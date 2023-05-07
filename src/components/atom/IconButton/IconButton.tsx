@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   GestureResponderEvent,
   Image,
@@ -6,7 +5,9 @@ import {
   Pressable,
   StyleSheet,
 } from 'react-native';
-import {Text} from '~/components/atoms';
+
+import React from 'react';
+import {Text} from '~/components/atom';
 
 interface IIconButton {
   icon: ImageSourcePropType;

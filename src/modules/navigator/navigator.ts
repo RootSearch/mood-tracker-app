@@ -1,4 +1,4 @@
-import {navigation} from '~/services/navigation';
+import {navigation} from '~/modules/navigator/base';
 
 export function moveToSignIn() {
   navigation.setRoot('SignIn');

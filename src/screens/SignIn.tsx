@@ -1,9 +1,9 @@
 import {StyleSheet, View} from 'react-native';
 
 import React from 'react';
-import {TestScreen} from '~/components/organisms';
+import {TestScreen} from '~/components/organism';
 import {authTokenAtom} from '~/stores/auth';
-import {moveToLoading} from '~/adaptors/navigation';
+import {moveToLoading} from '~/modules/navigator';
 import {useAtom} from 'jotai';
 
 export const SignIn = () => {

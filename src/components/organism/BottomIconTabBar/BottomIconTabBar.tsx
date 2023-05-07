@@ -9,7 +9,7 @@ import {
   InterviewDefault,
   MenuChecked,
   MenuDefault,
-} from '~/assets/images/icons';
+} from '~/assets/image/icon';
 import {StyleSheet, View} from 'react-native';
 import {
   switchToTestScreen1,
@@ -17,9 +17,9 @@ import {
   switchToTestScreen3,
   switchToTestScreen4,
   switchToTestScreen5,
-} from '~/adaptors/navigation';
+} from '~/modules/navigator';
 
-import {IconListGroup} from '~/components/molecules';
+import {IconListGroup} from '~/components/molecule';
 import React from 'react';
 import {Screens} from '~/screens';
 import {isIOS} from '~/app/device';

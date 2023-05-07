@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import React, {useMemo} from 'react';
 
-import {IconButton} from '~/components/atoms';
+import {IconButton} from '~/components/atom';
 import {Screens} from '~/screens';
 import {VIEWPORT_WIDTH} from '~/app/device';
 
